@@ -50,3 +50,27 @@ const myfunction=function(){
 
 console.log(myfunction)
 console.log(typeof nullvalue);
+
+
+
+//***************************Memory Storage************************
+//  Stack(primitve),Heap (Non-Primitive)
+let myname = "gajnana.com"
+let another = myname
+another = "pintuKumar"
+console.log(myname)
+console.log(another);
+
+let userOne={
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo=userOne
+userTwo.email = "gajnan@google.com"
+console.log(userTwo.email);
+console.log(userOne.email)
+
+
+//In  heap memory we use reference varian=ble
+//In Stack memory we are use Copy variable
