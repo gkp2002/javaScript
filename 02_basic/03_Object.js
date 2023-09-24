@@ -67,11 +67,36 @@ const obj2={3:"d",4:"c"}
 //const obj3 = Object.assign({},obj1,obj2)
 
 const obj3={...obj1,...obj2}
-console.log(obj3);
+//console.log(obj3);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn2'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn2'));
+
+
+
+const course={
+  coursename:"js in hindi",
+  price: "999",
+  courseInstructor:"gajanan"
+}
+
+const {courseInstructor:Instructor} =course //this is json object distructure
+console.log(Instructor);
+
+// **********JSON************
+
+
+// {
+//   "name":"gajanan",
+//   "Course":"MCA"
+// }
+
+
+// [
+//   {},
+//   {}
+// ]
