@@ -87,7 +87,7 @@ const course={
 const {courseInstructor:Instructor} =course //this is json object distructure
 console.log(Instructor);
 
-// **********JSON************
+// **********JSON************ j\
 
 
 // {
