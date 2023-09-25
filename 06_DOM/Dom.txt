@@ -1,0 +1,32 @@
+!--  Document.getElementById('title').
+      InnerText=> Show Only Web Text
+      InnerContent = show All Hidden text when hidden by any css property
+      InnerHtml = Show All The html Tag ANd content
+
+      Some important Selector
+      1. querySelector
+      2.querySelector('#id')
+      3.querySelector('.class')
+      4.querySelector('<input[type="password"]')
+      5.document.querySelector('p:first-child')
+
+      // Change element using inner element
+      document.queryselecor('ul').querySelector('li').innertText="change text in li list"
+      document.queryselecor('ul').querySelector('li').innertContent="change text in li list"
+
+      //New Selector
+      document.querySelectorAll('ul') => Select  all  query element 
+      if use queryselectorAll then value return in array format and access by index number
+      const list = document.querySelectorAll('li')
+      list[0].style.color='green'
+
+
+      // GetelementBy ClassName
+
+      document.getElementsByClassName('list')
+      const tempClass=document.getElementsByClassName('list')
+       const myConver=Array.from(tempClass) //convert in arrray
+
+      myConver.forEach(function(li){li.style.color="greenn"})
+
+-->
