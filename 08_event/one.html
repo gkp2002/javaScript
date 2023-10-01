@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event in html</title>
+</head>
+<body>
+    <h2>Amazing images</h2>
+    <div >
+        <ul id="images">
+            <li><img height="150px" width="200px" src="https://images.pexels.com/photos/1996332/pexels-photo-1996332.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="hores" id="horse"></li>
+            <li><img height="150px" width="200px" src="https://images.pexels.com/photos/11479966/pexels-photo-11479966.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="nature" id="nature"></li>
+            <li><img height="150px" width="200px" src="https://images.pexels.com/photos/9455716/pexels-photo-9455716.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" id="water"></li>
+            <li><img height="150px" width="200px" src="https://images.pexels.com/photos/18397478/pexels-photo-18397478/free-photo-of-retrocar.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" id="google"> </li>
+          
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('horse').onclick=function(){(alert("This is Horse"))}
+      document.getElementById('water').addEventListener('click',function(e){
+         alert("Water Clicked")
+      },false)
+      document.getElementById('horse').addEventListener('click',function(e){
+         alert("Horse Clicked")
+         e.stopPropagation(); //do not bobel event
+      },true)
+
+      document.getElementById('google').addEventListener('click',function(e){
+        console.log("Google click");
+                     e.preventDefaulte();
+                     e.stopPropagation();
+      },false)
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode.tagName);
+        if(e.target.tagName === 'IMG'){
+        
+        let removeIt = e.target.parentNode
+        removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt)
+
+    },false)
+        
+
+      //attachEvent()
+
+</script>
+</html>

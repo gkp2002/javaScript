@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gajanan Prajapti</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){console.log("gajanan");},2000)
+    const sayagain = function(){
+        console.log("gajananKumar");
+    
+    }
+   const change = function(){
+    document.querySelector('h1').innerHTML = "best js Series"
+   }
+    setInterval(sayagain,2000)
+    const changeme = setInterval(change,3000)//set time out in java Script
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("stopp");
+    })
+</script>
+</html>

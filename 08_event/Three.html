@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIme interval</title>
+</head>
+<body>
+    <h1>Hello gajanan</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const setdate = function(str){
+        console.log("str",Date.now());
+    
+    }
+    const interval=''
+      // const intervalid=setInterval(setdate,1000,"h1")//setinterval wit function
+     //clearInterval(intervalid)
+     document.querySelector('#start').addEventListener('click', function(){
+      setInterval(setdate,1000,"h1")
+        
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(interval);
+    })
+</script>
+</html>
